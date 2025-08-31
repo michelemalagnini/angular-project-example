@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  template: 'ciaooo',
+  imports: [ShoppingCartComponent],
+  template: '<app-shopping-cart />',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {}
